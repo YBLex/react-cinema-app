@@ -1,4 +1,4 @@
-# Личный проект «Что посмотреть» [![Build status][travis-image]][travis-url]
+# Личный проект «Что посмотреть»
 
 - Студент: [Афанасьев Алексей](https://up.htmlacademy.ru/react/4/user/912337).
 - Наставник: [Сенсей](https://up.htmlacademy.ru/react/4/user/912337).
