@@ -1,4 +1,4 @@
-import adapter from "../../adapter/adapter.js";
+import adapter from '../../adapter/adapter.js';
 import ActionCreator from './action-creator.js';
 
 const Operation = {

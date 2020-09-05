@@ -1,5 +1,5 @@
 import NameSpace from '../name-space.js';
-import {createSelector} from "reselect";
+import {createSelector} from 'reselect';
 import {getArrayOfUniqueProps} from '../../utils/utils.js';
 import {MAX_GENRES_ON_PAGE, ALL_GENRES} from '../../constants/constants.js';
 
@@ -16,9 +16,11 @@ export const getMoviesFilteredByGenre = (store) => {
 export const getGenres = createSelector(
     getMovies,
     (movies) => {
-      const genres = getArrayOfUniqueProps(movies, `genre`).length <= MAX_GENRES_ON_PAGE
-        ? getArrayOfUniqueProps(movies, `genre`)
-        : getArrayOfUniqueProps(movies, `genre`).slice(0, MAX_GENRES_ON_PAGE);
-      return [ALL_GENRES, ...genres];
+      const allGenres = getArrayOfUniqueProps(movies, `genre`);
+
+      const result = allGenres.length <= MAX_GENRES_ON_PAGE
+        ? allGenres
+        : allGenres.slice(0, MAX_GENRES_ON_PAGE);
+      return [ALL_GENRES, ...result];
     }
 );

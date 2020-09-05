@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {getMovies, getMoviesFilteredByGenre, getGenres} from "../../redux/data/selectors.js";
-import DataActionCreator from "../../redux/data/action-creator";
+import {getMovies, getMoviesFilteredByGenre, getGenres} from '../../redux/data/selectors.js';
+import DataActionCreator from '../../redux/data/action-creator';
 import {getAuthStatus} from '../../redux/user/selectors.js';
 
 import PageContent from '../page-content/page-content.jsx';

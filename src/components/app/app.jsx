@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
 
 import Main from '../main/main.jsx';
-import SingIn from "../sing-in/sing-in.jsx";
+import SingIn from '../sing-in/sing-in.jsx';
 // import MoviePage from '../movie-page/movie-page.jsx';
 
 const App = ({
@@ -24,11 +24,11 @@ const App = ({
         <Route exact path='/sing-in'>
           <SingIn />
         </Route>
-        {/*<Route exact path='/movie'>*/}
+        {/* <Route exact path='/movie'>*/}
         {/*  <MoviePage*/}
         {/*    movieData={movies}*/}
         {/*  />*/}
-        {/*</Route>*/}
+        {/* </Route>*/}
       </Switch>
     </BrowserRouter>
   );

@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 
 import {getAuthStatus} from '../../redux/user/selectors.js';
 import UserOperation from '../../redux/user/operation.js';
-import MovieHeader from "../movie-header/movie-header.jsx";
+import MovieHeader from '../movie-header/movie-header.jsx';
 
 class SingIn extends React.PureComponent {
   constructor(props) {

@@ -1,5 +1,5 @@
 import {extend} from '../../utils/utils.js';
-import ActionType from "./action-type.js";
+import ActionType from './action-type.js';
 
 const initialState = {
   movies: [],
